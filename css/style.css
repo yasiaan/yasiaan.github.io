@@ -1,0 +1,283 @@
+.ml11 {
+  font-weight: 700;
+  font-size: 3.5em;
+}
+
+.ml11 .text-wrapper {
+  position: relative;
+  display: inline-block;
+  padding-top: 0.1em;
+  padding-right: 0.05em;
+  padding-bottom: 0.15em;
+}
+
+.ml11 .line {
+  opacity: 0;
+  position: absolute;
+  left: 0;
+  height: 100%;
+  width: 3px;
+  background-color: #fff;
+  transform-origin: 0 50%;
+}
+
+.ml11 .line1 { 
+  top: 0; 
+  left: 0;
+}
+
+.ml11 .letter {
+  display: inline-block;
+  line-height: 1em;
+}
+
+.container {
+    margin-top: 200px
+}
+
+.social-icon .fa {
+    text-align: center;
+    display: table-cell;
+    vertical-align: middle;
+    width: 30px;
+    height: 30px !important;
+    line-height: 1;
+    font-size: 14px;
+    -webkit-transition: all 0.4s ease;
+    transition: all 0.4s ease;
+    color: #fff;
+    background: none
+}
+
+.social-icon:hover .fa {
+    opacity: .8
+}
+
+.social-icon .fa-pinterest {
+    background-color: #cb2027
+}
+
+.social-icon .fa-rss {
+    background-color: #f26522
+}
+
+.social-icon .fa-facebook {
+    background-color: #3b5998
+}
+
+.social-icon .fa-twitter {
+    background-color: #00aced
+}
+
+.social-icon .fa-flickr {
+    background-color: #ff0084
+}
+
+.social-icon .fa-dribbble {
+    background-color: #ea4c89
+}
+
+.social-icon .fa-behance {
+    background-color: #42a9fb
+}
+
+.social-icon .fa-linkedin {
+    background-color: #007bb6
+}
+
+.social-icon .fa-vimeo-square {
+    background-color: #aad450
+}
+
+.social-icon .fa-youtube {
+    background-color: #bb0000
+}
+
+.social-icon .fa-tumblr {
+    background-color: #32506d
+}
+
+.social-icon .fa-github-alt {
+    background-color: #333333
+}
+
+.social-icon .fa-google-plus {
+    background-color: #dd4b39
+}
+
+.social-icon .fa-instagram {
+    background-color: #517fa4
+}
+
+.social-icon .fa-soundcloud {
+    background-color: #f80
+}
+
+.social-icon-large {
+    margin-right: 20px
+}
+
+.social-icon-large .fa {
+    font-size: 25px;
+    background: transparent;
+    color: #000;
+    text-align: center;
+    display: table-cell;
+    vertical-align: middle;
+    width: 60px;
+    height: 60px !important;
+    line-height: 1;
+    -webkit-transition: all 0.4s ease;
+    transition: all 0.4s ease
+}
+
+.social-icon-large:hover .fa {
+    color: #fff
+}
+
+.social-icon-large:hover .fa-pinterest {
+    background-color: #cb2027
+}
+
+.social-icon-large:hover .fa-rss {
+    background-color: #f26522
+}
+
+.social-icon-large:hover .fa-facebook {
+    background-color: #3b5998
+}
+
+.social-icon-large:hover .fa-twitter {
+    background-color: #00aced
+}
+
+.social-icon-large:hover .fa-flickr {
+    background-color: #ff0084
+}
+
+.social-icon-large:hover .fa-dribbble {
+    background-color: #ea4c89
+}
+
+.social-icon-large:hover .fa-behance {
+    background-color: #42a9fb
+}
+
+.social-icon-large:hover .fa-linkedin {
+    background-color: #007bb6
+}
+
+.social-icon-large:hover .fa-vimeo-square {
+    background-color: #aad450
+}
+
+.social-icon-large:hover .fa-youtube {
+    background-color: #bb0000
+}
+
+.social-icon-large:hover .fa-tumblr {
+    background-color: #32506d
+}
+
+.social-icon-large:hover .fa-github-alt {
+    background-color: #333333
+}
+
+.social-icon-large:hover .fa-google-plus {
+    background-color: #dd4b39
+}
+
+.social-icon-large:hover .fa-instagram {
+    background-color: #517fa4
+}
+
+.social-icon-large:hover .fa-soundcloud {
+    background-color: #f80
+}
+
+.btn-round {
+    border-radius: 4px !important
+}
+
+.btn.btn-large i {
+    font-size: 24px
+}
+
+/* Scroll */
+body{
+  display: flex;
+  height: 100vh;
+  flex-direction: column;
+  justify-content: center;
+}
+
+h1 {
+  font-family: sans-serif;
+  font-weight: 100;
+  margin: 0 auto;
+  margin-bottom: 2rem;
+}
+
+.arrow {
+  --delay: 0.5s;
+  --colour: #03588C;
+  position: relative;
+  display: block;
+  width: 100px;
+  height: 100px;
+  margin: 0 auto;
+  border-radius: 50%;
+  border: 3px solid var(--colour);
+  box-sizing: border-box;
+  
+  transition: all .5s ease;
+}
+
+.arrow::before, .arrow::after {
+  content:"";
+  position: absolute;
+  display: block;
+  box-sizing: border-box;
+  transition: all var(--delay) ease-in-out;
+}
+
+/* The arrow body */
+.arrow::before {
+  width: 0%;
+  height: 3px;
+  left: -50px;
+  top: 50%;
+  
+  background: var(--colour);
+  transform: translate(0, -10%);
+}
+
+/* The arrow head */
+.arrow::after {
+  width: 20px;
+  height: 20px;
+  left: 21px;
+  top: 50%;
+  
+  border: 3px solid var(--colour);
+  border-left: 0;
+  border-bottom: 0;
+  transform: translate(50%, -50%) rotate(9deg);
+}
+
+.arrow:hover {
+  cursor: pointer;
+  border-color:transparent;
+  transition: all var(--delay) ease;
+}
+.arrow:hover::before {
+  opacity: 1;
+  left:-5px;
+  width: calc(100% + 5px);
+}
+.arrow:hover::after {
+  width: 30px;
+  height: 30px;
+  left: calc(100px - 46px/2);
+  transform: translate(-50%, -50%) rotate(45deg);
+}
