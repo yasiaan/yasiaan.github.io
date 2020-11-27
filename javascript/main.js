@@ -119,4 +119,61 @@ if ($('.smart-scroll').length > 0) { // check if element exists
 };
 
 // 
+function animeTitle(s) {
+    var ml4 = {};
+    ml4.opacityIn = [0, 1];
+    ml4.scaleIn = [0.2, 1];
+    ml4.scaleOut = 3;
+    ml4.durationIn = 800;
+    ml4.durationOut = 600;
+    ml4.delay = 500;
 
+    anime.timeline({ loop: true })
+        .add({
+            targets: s.concat(' .letters-1'),
+            opacity: ml4.opacityIn,
+            scale: ml4.scaleIn,
+            duration: ml4.durationIn
+        }).add({
+            targets: s.concat(' .letters-1'),
+            opacity: 0,
+            scale: ml4.scaleOut,
+            duration: ml4.durationOut,
+            easing: "easeInExpo",
+            delay: ml4.delay
+        }).add({
+            targets: s.concat(' .letters-2'),
+            opacity: ml4.opacityIn,
+            scale: ml4.scaleIn,
+            duration: ml4.durationIn
+        }).add({
+            targets: s.concat(' .letters-2'),
+            opacity: 0,
+            scale: ml4.scaleOut,
+            duration: ml4.durationOut,
+            easing: "easeInExpo",
+            delay: ml4.delay
+        }).add({
+            targets: s.concat(' .letters-3'),
+            opacity: ml4.opacityIn,
+            scale: ml4.scaleIn,
+            duration: ml4.durationIn
+        }).add({
+            targets: s.concat(' .letters-3'),
+            opacity: 0,
+            scale: ml4.scaleOut,
+            duration: ml4.durationOut,
+            easing: "easeInExpo",
+            delay: ml4.delay
+        }).add({
+            targets: s,
+            opacity: 0,
+            duration: 200,
+            delay: 500
+        });
+};
+
+animeTitle('.ml4');
+
+
+// 
